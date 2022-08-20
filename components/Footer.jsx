@@ -3,7 +3,7 @@ import styles from '../styles/Footer.module.css';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      Copyright <span className={styles.brand}>ApnaBazaar</span>{' '}
+      Copyright <span className={styles.brand}>GAMEKART</span>{' '}
       {new Date().getFullYear()}
     </footer>
   );

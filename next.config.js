@@ -3,5 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 }
-
-module.exports = nextConfig
+module.exports = {
+  images: {
+    domains: ['imgur.com','i.imgur.com'],
+  },
+  nextConfig,
+};

@@ -1,3 +1,5 @@
+
+import { NextApiRequest,NextApiResponse } from '../../../node_modules/next/dist/shared/lib/utils';
 import data from './data.json';
 
 export function getProductsByCategory(category) {
@@ -5,7 +7,7 @@ export function getProductsByCategory(category) {
   return products;
 }
 
-export default function handler(req, res) {
+export default function handler(req: NextApiRequest, res:NextApiResponse) {
   if (req.method !== 'GET') {
     res.setHeader('Allow', ['GET']);
     res.status(405).json({ message: `Method ${req.method} is not allowed` });
